@@ -1,0 +1,34 @@
+First of all The user must be in wheel group
+
+Example 9. Adding User Accounts to a New Group Using pw(8)
+# pw groupmod wheel -M jru
+# pw groupshow wheel
+wheel:*:1100:jru
+
+pkg install xfce
+
+# cd /usr/ports/x11-wm/xfce4
+# make install clean
+
+dbus_enable="YES"
+
+% echo ". /usr/local/etc/xdg/xfce4/xinitrc" > ~/.xinitrc
+
+/etc/ttys:
+ttyv8   "/usr/local/bin/xdm -nodaemon"  xterm   off secure
+
+Then enter # pkg install drm-kmod
+Enter the easy editor to edit the file /etc/rc.conf by entering the following command: # ee /etc/rc.conf
+Once in the easy editor, on a new line, enter the following: kld_list=”/boot/modules/i915kms.ko”
+Make sure to hit Enter so the file starts on a new line after saving.
+Save and exit the easy editor by pushing Esc and following the prompts to save and exit. The KMS driver should now be set up.
+Now install Xorg by following 5.3 Installing Xorg in the Handbook. Enter # pkg install xorg
+Because the KMS driver was set up, one can skip ahead in the Handbook to 5.7.3. Xfce. To install the Xfce package, enter # pkg install xfce.
+Enter the easy editor again to edit /etc/rc.conf by entering the following: # ee /etc/rc.conf
+On a new line, enter dbus_enable=”YES”
+After entering the above, hit Enter so the file starts on a new line. Then hit Esc and follow the prompts to save and exit.
+Start the /etc/rc.conf lines by entering # service dbus start
+Next, enter # kldload /boot/modules/i915kms.ko
+Simply rebooting would also achieve steps 13 and 14.
+If one didn’t reboot, enter # exit to leave the superuser account.
+If everything worked, one should see the Xfce desktop after running % startx as a regular account.

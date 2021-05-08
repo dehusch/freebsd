@@ -1,0 +1,10 @@
+Restart the system.
+Enter s to enter Single User Mode.
+
+mount -ruw / 
+
+mount -a
+
+Run passwd root to set a new root password.
+
+shutdown -r now

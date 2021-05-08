@@ -1,0 +1,37 @@
+https://sempreupdate.com.br/instalar-o-kde-plasma-no-freebsd/
+
+pkg install xorg
+Depois da instalação do Xorg, vamos instalar o ambiente de trabalho KDE5 que vem com um ambiente de trabalho poderoso, completo e pronto para o uso.
+
+pkg install x11/kde5
+A instalação vai demorar dependendo da velocidade de conexão com a internet, que no nosso caso temos o tamanho para download de 1GB.
+
+O KDE5 mudou o seu gerenciamento de login do KDM (KDE Display Manager) para o SDDM (Simple Desktop Display Manager), assim vamos instalar o mesmo para termos um desktop mais intuitivo para o usuário final.
+
+pkg install sddm
+Após a instalação do X e do ambiente de trabalho KDE, caso tenha uma placa de vídeo da Nvidia, pode seguir como base esse tutorial de instalação de como instalar driver GeForce GTX 1050 Ti no FreeBSD.
+
+
+3. Configurando o sistema
+Já com o ambiente de trabalho KDE instalado, devemos fazer algumas configurações necessário para carregá-lo.
+
+Vamos editar o arquivo /etc/rc.conf e adicionar as linhas com o D-Bus (barramento de mensagens usado para enviar mensagens entre aplicações), o HAL (subsistema de software para sistema operacional do tipo UNIX que fornece abstração de hardware) e o SDDM (para carregar o gerenciador de login).
+
+nano /etc/rc.conf
+Linhas a serem adicionadas:
+
+dbus_enable="YES"
+hald_enable="YES"
+sddm_enable="YES"
+Essas linhas habilitam os serviços ao inicializar o sistema.
+
+Em continuidade, o KDE necessita que o /proc esteja montado, assim vamos adicionar a linha referente no arquivo fstab.
+
+nano /etc/fstab
+Linha a ser adicionada:
+
+proc     /proc     procfs     rw     0     0
+Para finalizar a configuração e poder inicializar o sistema com o novo ambiente de trabalho KDE, vamos adicionar o usuário comum mcnd2 ao grupo wheel, logo o mesmo poderá se logar com o comando su e assim ter privilégio de root.
+
+pw groupmod wheel -m mcnd2
+Após essas configurações, vamos dar reboot no sistema.

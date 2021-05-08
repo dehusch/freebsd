@@ -1,0 +1,2 @@
+setxkbmap br
+para setar o teclado com ptbr

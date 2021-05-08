@@ -1,0 +1,3 @@
+kld_list="amdgpu"
+kld_list="/boot/modules/amdgpu.ko"
+/etc/rc.conf
