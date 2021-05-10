@@ -1,0 +1,2 @@
+gcc source.c -o source
+gcc -Wall source.c -o source
