@@ -4,8 +4,51 @@ Example 9. Adding User Accounts to a New Group Using pw(8)
 # pw groupmod wheel -M jru
 # pw groupshow wheel
 wheel:*:1100:jru
+#
+#TESTED WAY
+#
 
+pkg install -y nano
+
+pkg install -y xorg
+
+pkg install -y xfce
+
+pkg install -y slim slim-themes
+
+sysrc dbus_enable=YES
+
+sysrc hald_enable=YES
+
+sysrc slim_enable=YES
+
+sysrc sound_load=YES
+
+sysrc snd_hda_load=YES
+
+nano /home/youruser/.xinitrc
+  --->>>insert the line
+  exec startxfce4
+  
+pkg install -y firefox htop gimp
+
+reboot
+
+
+
+
+
+
+
+
+
+
+
+#
+#NON TESTED WAY
+#
 pkg install xfce
+
 
 # cd /usr/ports/x11-wm/xfce4
 # make install clean
