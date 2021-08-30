@@ -1,0 +1,7 @@
+/etc/rc.conf
+kld_list="amd_gpu"
+kld_list="/boot/modules/amdgpu.ko"
+AMDGPU e DRM-KMOD devem ser instalados
+
+/boot/loader.conf
+kern.cam.boot_delay=1000
