@@ -1,6 +1,10 @@
 git config --global user.name "usuario"
 git config --global user.email "email@email.com"
 
+In VSCode
+install current Python version
+Install GitHub Pull request extension
+Install keyring-gnome
 
 git clone http://...
 git add -A (Insere todos os arquivos da pasta atual)
