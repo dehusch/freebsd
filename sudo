@@ -1,0 +1,12 @@
+pkg install sudo
+
+adicionar o usuario no grupo de usuario SUDOERS
+
+cd /usr/local/etc
+
+nano sudoers
+
+ACRESCENTAR A LINHA ABAIXO DENTRO DO ARQUIVO DE TEXTO SUDOERS
+
+nomedousuario ALL=(ALL) ALL
+
