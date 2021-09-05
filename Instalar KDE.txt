@@ -1,3 +1,10 @@
+
+##############################   IMPORTANTE   #####################################
+NA TELA DE LOGIN TEM QUE TROCAR O AMBIENTE NA CAIXA DE SELEÇAO NO CANTO INFERIOR!!!
+###################################################################################
+
+
+
 https://sempreupdate.com.br/instalar-o-kde-plasma-no-freebsd/
 
 pkg install xorg
