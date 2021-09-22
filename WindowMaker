@@ -1,0 +1,9 @@
+sudo pkg install Xorg wmaker slim
+sysrc dbus_enable=YES
+sysrc hald_enable=YES
+sysrc slim_enable=YES
+# nano ~/.xinitrc
+  exec wmaker
+$ nano ~/.xinitrc
+  exec wmaker
+reboot
