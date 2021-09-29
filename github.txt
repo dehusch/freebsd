@@ -1,5 +1,12 @@
+***** INSTALAR o keyring-gnome para gerenciamento da senha *******
+***** INSTALAR o keyring-gnome para gerenciamento da senha *******
+
 git config --global user.name "usuario"
 git config --global user.email "email@email.com"
+
+############################################################
+### INSTALAR o keyring-gnome para gerenciamento da senha ###
+############################################################
 
 In VSCode
 install current Python version
