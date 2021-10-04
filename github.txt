@@ -13,6 +13,8 @@ install current Python version
 Install GitHub Pull request extension
 Install keyring-gnome
 
+E quando o VS code perde a senha?
+
 git clone http://...
 git add -A (Insere todos os arquivos da pasta atual)
 git add nomedoarquivo (insere apenas o arquivo)
