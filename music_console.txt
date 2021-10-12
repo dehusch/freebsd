@@ -1,0 +1,23 @@
+I can play some music like:
+
+playtube.sh https://www.youtube.com/watch?v=15kWzIAq4gA
+
+and here is the script
+
+#!/usr/bin/env bash
+
+VIDEO_URL=$1
+
+if [[ -z $VIDEO_URL ]]; then 
+    echo "ERROR: Missing VIDEO_URL param " 
+    exit 1
+fi 
+
+mkdir -p ~/private/music/youtube-dl-temp
+cd ~/private/music/youtube-dl-temp
+
+FILE_NAME=$(youtube-dl -f 251 --get-filename --restrict-filenames $VIDEO_URL )
+
+youtube-dl -f 251 -o $FILE_NAME $VIDEO_URL 
+
+mplayer -novideo $FILE_NAME
