@@ -1,0 +1,31 @@
+pkg install mutt
+mkdir ~/.config/mutt
+cd ~/.config/mutt
+vim muttrc
+
+For yahoo server, must be created a app password to
+validate login in your yahoo account security options.
+
+set imap_user = "de.husch@yahoo.de"
+set folder = "imaps://imap.mail.yahoo.com:993"
+set imap_pass = "PASS"
+set smtp_url ="smtp://smtp.mail.yahoo.com:465"
+set smtp_pass = "PASS"
+
+set from = "de.husch@yahoo.de
+set realname = "Eberhard Hüsch"
+
+
+set spoolfile = "+INBOX"
+
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set ssl_starttls = yes
+set ssl_force_tls = yes
+mailboxes =INBOX =Sent =Trash =Drafts =Junk =Other
+
+
+set header_cache     =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
