@@ -9,7 +9,7 @@ validate login in your yahoo account security options.
 set imap_user = "de.husch@yahoo.de"
 set folder = "imaps://imap.mail.yahoo.com:993"
 set imap_pass = "PASS"
-set smtp_url ="smtp://smtp.mail.yahoo.com:465"
+set smtp_url ="smtp://smtp.mail.yahoo.com:587"
 set smtp_pass = "PASS"
 
 set from = "de.husch@yahoo.de
