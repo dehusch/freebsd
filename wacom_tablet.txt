@@ -1,4 +1,6 @@
 https://www.freshports.org/x11-drivers/xf86-input-wacom/
+https://medium.com/@claytones/utilizando-a-mesa-digitalizadora-wacom-intuos-ctl4100-no-freebsd-12-1-release-af7a8c88dee2
+
 
 
 Wacom Tablets under FreeBSD
