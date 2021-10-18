@@ -1,0 +1,37 @@
+https://www.freshports.org/x11-drivers/xf86-input-wacom/
+
+
+Wacom Tablets under FreeBSD
+
+These instructions are correct as of FreeBSD 13.
+
+Install
+
+Install:
+
+    multimedia/webcamd (v3.9.0.5 or newer)
+    x11/libwacom
+    x11-drivers/xf86-input-wacom
+    x11-servers/xorg-server (need HAL support) 
+
+Configuration
+
+In /boot/loader.conf, make sure you have:
+
+cuse_load="YES"
+
+(Note: this used to be "cuse4bsd_load".)
+
+In /etc/rc.conf, make sure you have:
+
+webcamd_enable="YES"
+
+(Note: Older versions of FreeBSD may have also required devd_enable="YES" and hald_enable="YES" as well.)
+
+Restart devd, and add your user to the webcamd group:
+
+# service devd restart
+# pw group add webcamd
+# pw groupmod webcamd -m <username>
+
+At this point you may need to disconnect and reconnect your tablet. 
