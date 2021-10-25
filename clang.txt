@@ -1,0 +1,15 @@
+Simple and fast compile for C with CLANG
+**************
+clang -o C C.c
+**************
+"C" is the output
+"C.c" is the programm file
+
+
+
+Simple and fast compile for C++ with CLANG
+******************
+clang++ -o C C.cpp
+******************
+"C" is the output
+"C.cpp" is the programm file
