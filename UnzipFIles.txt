@@ -1,0 +1,15 @@
+FOR UNZIPING MULTIPLE PARTS
+
+# combine all multiparts
+$ cat Android_SS.zip.* > Android_SS.zip
+
+# fix the zip
+$ zip -F Android_SS.zip
+
+# unzip
+$ unzip Android_SS.zip
+
+
+FOR .7z FILES
+use cat for combine
+use tar -xvf filename.7z for unziping
