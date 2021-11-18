@@ -1,0 +1,18 @@
+
+
+The Plank Preferences and Quit menu items can be accessed 
+by right cliking near the edges (left/right) of the dock. 
+Or you can hold down the Ctrl key and right click anywhere 
+on the Plank dock.
+
+You can install Plank themes downloaded from such websites by placing them in:
+
+~/.local/share/plank/themes for your current user (doesn't require root/sudo)
+/usr/share/plank/themes for all users (root/sudo needed to install them)
+
+
+In case you download an archive, extract it and place the theme folder in 
+the directory of your choice from the two listed above.
+
+You don't need to restart Plank. After installing a new Plank theme, open 
+the Plank preferences and you'll find the new theme there, ready to be used.
