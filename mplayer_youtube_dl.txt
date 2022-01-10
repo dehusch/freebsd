@@ -2,11 +2,19 @@ pkg install mplayer
 pkg install youtube_dl
 pkg install ffmpeg
 
+sysctl hw.snd.default_unit=2
+or
+sysctl hw.snd.default_unit=1
+or
+sysctl hw.snd.default_unit=0
+
 ********************
 DOWNLOAD
 ********************
-youtube-dl -o "Your Music.mp3" "https://some/video"
+youtube-dl -f m4a "https://some/video"
 
 ********************
 PLAYING
+********************
+mplayer file.ext
 ********************
