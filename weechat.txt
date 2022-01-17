@@ -1,0 +1,6 @@
+
+autojoin
+/set irc.server.libera.autojoin #canal
+
+habilitar download script
+/set script.scripts.download_enabled on
