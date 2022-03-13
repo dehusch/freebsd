@@ -2,7 +2,11 @@
 dmesg
 ***********************
 
-#ifconfig
+# ifconfig
+# service netif restart
+# service netif stop
+# service netif start
+# /etc/rc.d/netif start
 
 **************************************************************
 *****************
