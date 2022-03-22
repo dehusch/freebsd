@@ -6,3 +6,7 @@ copiar o texto abaixo e colar no terminal:
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vimM
+
+copiar o exemplo do plug vim contido na pagina no git ("call plug#begin...)
+
+
