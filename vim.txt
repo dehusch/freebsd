@@ -1,1 +1,8 @@
-//Instruções para configurar VIM
+//Instruções para configurar VI
+
+instalar o vim, curl
+
+copiar o texto abaixo e colar no terminal:
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vimM
