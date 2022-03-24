@@ -1,11 +1,25 @@
 #MUDAR PERMISSAO DE PASTA DE ROOT PARA USUARIO
 chmod 777 directory
 
+
+
 COPY FOLDERS AND ALL CONTENTS
 cp -R /home/user/folder /home/user/backup/
+
+
 
 DELETE full folder not empty
 rm -r foldername
 
+
+
 LOCALIZAR UM EXECUTAVEL OU ARQUIVO
 whereis nomedoarquivo
+
+
+
+TRADUZIR UM PALAVRA INGLES > QUALQUER IDIOMA
+intalar primeiro google-translate-cli-0.9.6.12_1
+
+$ trans :de world (Ira traduzir do inglês para o alemão)
+$ trans de: welt (ira traduzir do Alemão para o inglês)
