@@ -5,7 +5,7 @@ height: 100%;
 .menu-principal{
 width: 100%;
 background-color: #ec4e4e;
-height: 200;
+height: 100px;
 }
 .main{
 margin: 0 auto;
@@ -13,12 +13,15 @@ width: 500px;
 position: relative;
 }
 .logo{
+    margin-right: 15px;
 width: 10%;
 float: left;
-padding: 2px;
+padding: 8px;
 }
 .redessociais ul li{
+    margin-left: 15px;
     display: inline-block;
+    list-style: none;
 }
 .redessociais{
     width: 10%;
