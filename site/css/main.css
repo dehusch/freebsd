@@ -60,12 +60,14 @@ ul {
 }
 
 .search{
-    margin: 14px 21% 10px 0%;
+    margin-left: 68%;
+    margin-top: 14px;
     float: right;
+    position: absolute;
 }
 
 .menu{
     margin: 0px 0% 0px 20%;
-    position: relative;
+    position: absolute;
     float: left;
 }
