@@ -1,43 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 .body{
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
+
 }
+
 .menu-principal{
-width: 100%;
-background-color: #ec4444;
-height: 100px;
+    width: 100%;
+    background-color: #ec4444;
+    height: 100px;
 }
-.main{
-margin: 0 auto;
-width: 500px;
-position: relative;
-}
+
 .logo{
-margin: 5px 10% 6px 20%;
-width: 10%;
-float: left;
+    margin: 5px 10% 6px 20%;
+    width: 10%;
+    float: left;
 
 }
+
 .redessociais{
-float: right;
-margin: 19px 30% 6px 70%;
-position: absolute;
-list-style: none;
+    float: right;
+    margin: 19px 30% 6px 70%;
+    position: absolute;
+    list-style: none;
 
 
 }
+
 .github{
-margin: 20px 20% 10px 72%;
-float: right;
-position: absolute;
+    margin: 20px 20% 10px 72%;
+    float: right;
+    position: absolute;
 
 }
 
 .header-2 {
-    background-color: black;
+    background-color: rgb(78, 20, 20);
     width: 100%;
-    border-bottom: 3px solid rgb(18, 25, 39);
+    border-top: 3px solid rgb(236, 138, 138);
+    border-bottom: 3px solid rgb(236, 138, 138);
     color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.search{
+    position: relative;
+}
+
+.menu{
+    margin: 0% 15%;
+    float: left;
 }
