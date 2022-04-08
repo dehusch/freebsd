@@ -1,2 +1,7 @@
 gcc source.c -o source
 gcc -Wall source.c -o source
+
+Configurar o Intellisense.
+1-Instalar extensão C/C++
+2-Instalar extensão C Compiler Run
+3-No windows, intalar o MinGW.
