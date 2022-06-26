@@ -1,3 +1,16 @@
+Help Options:
+  -h, --help                 Show help options
+  --help-all                 Show all help options
+  --help-gapplication        Show GApplication options
+  --help-gtk                 Show GTK+ Options
+
+Application Options:
+  -d, --debug                Enable debug logging
+  -v, --verbose              Enable verbose logging
+  -n, --name                 The name of this dock. Defaults to "dock1".
+  --preferences              Show preferences dialog of the just started or already running instance
+  -V, --version              Show the application's version
+  --display=DISPLAY          X display to use
 
 
 The Plank Preferences and Quit menu items can be accessed 
