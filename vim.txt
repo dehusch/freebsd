@@ -1,4 +1,34 @@
 //Instruções para configurar VI
+Install plugins manually (Vim 8 and above)
+A Vim package is a directory containing one or more plugins. By default, your Vim settings are contained in ~/.vim, 
+so that's where Vim looks for plugins when you launch it. (The examples below use the generic name vendor to indicate 
+that the plugins are obtained from an entity that is not you.)
+
+When you start Vim, it first processes your .vimrc file, and then it scans all directories in ~/.vim for plugins contained in pack/*/start.
+
+By default, your ~/.vim directory (if you even have one) has no such file structure, so set that up with:
+
+$ mkdir -p ~/.vim/pack/vendor/start
+
+Create .vimrc file in your home directory
+
+
+
+Now you can place Vim plugins in ~/.vim/pack/vendor/start, and they'll automatically load when you launch Vim.
+
+
+For example, try installing NERDTree, a text-based file manager for Vim. First, use Git to clone a snapshot of the NERDTree repository:
+
+$ git clone --depth 1 \
+  https://github.com/preservim/nerdtree.git \
+  ~/.vim/pack/vendor/start/nerdtree
+Launch Vim or gvim, and type this command:
+
+:NERDTree
+A file tree will open along the left side of your Vim window.
+
+
+
 
 instalar o vim, curl
 
