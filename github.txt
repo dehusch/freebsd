@@ -20,3 +20,6 @@ git add -A (Insere todos os arquivos da pasta atual)
 git add nomedoarquivo (insere apenas o arquivo)
 git commit (deve inserir um comentario para subir o arquivo)
 git push ogirin main (neste caso o branch é main)
+
+
+Basic commands
