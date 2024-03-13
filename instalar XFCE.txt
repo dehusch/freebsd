@@ -16,6 +16,10 @@ pkg install -y xfce
 
 pkg install -y slim slim-themes
 
+pkg install DRM-KMOD
+
+sysrc kld_list+=i915kms
+
 sysrc dbus_enable=YES
 
 sysrc hald_enable=YES
