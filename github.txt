@@ -1,8 +1,14 @@
-***** INSTALAR o keyring-gnome para gerenciamento da senha *******
-***** INSTALAR o keyring-gnome para gerenciamento da senha *******
+***** INSTALAR o keyring-gnome para gerenciamento da senha NO VSCODE*******
+***** INSTALAR o keyring-gnome para gerenciamento da senha NO VSCODE*******
+
+Para utilizar git no CLI
 
 git config --global user.name "usuario"
 git config --global user.email "email@email.com"
+git clone https://tokenhere@github.com/user_name/repo_name.git
+
+Utilizar um token gerado no ambiente de desenvolvedor no GITHUB.
+Este token tem que ser substituido no link acima.
 
 ############################################################
 ### INSTALAR o keyring-gnome para gerenciamento da senha ###
