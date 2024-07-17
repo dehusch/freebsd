@@ -40,5 +40,16 @@ Linha a ser adicionada:
 proc     /proc     procfs     rw     0     0
 Para finalizar a configuração e poder inicializar o sistema com o novo ambiente de trabalho KDE, vamos adicionar o usuário comum mcnd2 ao grupo wheel, logo o mesmo poderá se logar com o comando su e assim ter privilégio de root.
 
+
 pw groupmod wheel -m mcnd2
+
+*******************************
+****INSTALAR DRIVER GRAFICO****
+*******************************
+
+pkg install drm-kmod
+sysrc kld_list="i915kms"
+
+
+
 Após essas configurações, vamos dar reboot no sistema.
